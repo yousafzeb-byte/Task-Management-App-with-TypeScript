@@ -1,0 +1,35 @@
+/* TaskDetailsPage Styles */
+
+.task-details-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.not-found-container {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.not-found-container h1 {
+  color: var(--danger-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.not-found-container p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .task-details-page {
+    padding: var(--spacing-md);
+  }
+
+  .not-found-container {
+    padding: var(--spacing-lg);
+  }
+}

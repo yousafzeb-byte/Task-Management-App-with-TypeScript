@@ -1,0 +1,69 @@
+/* AuthStatus Component Styles */
+
+.auth-status {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.auth-status.loading,
+.auth-status.not-authenticated {
+  justify-content: center;
+}
+
+.auth-status.authenticated {
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.user-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+}
+
+.user-email {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+@media (max-width: 640px) {
+  .auth-status {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .auth-status.authenticated {
+    justify-content: flex-start;
+  }
+
+  .user-info {
+    width: 100%;
+  }
+
+  .auth-status .btn {
+    width: 100%;
+  }
+}
