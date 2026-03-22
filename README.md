@@ -14,6 +14,16 @@ A production-style task management application built with React, TypeScript, Vit
 - Applied type-safe patterns using interfaces, union types, custom hooks, and Context-based state.
 - Designed a responsive dashboard UI for desktop, tablet, and mobile layouts.
 
+## Visual Showcase
+
+Add screenshots and one short GIF under `docs/media/` for instant project proof in recruiter scans.
+
+```md
+![Dashboard View](docs/media/dashboard-view.png)
+![Create Task Modal](docs/media/create-task-modal.png)
+![Task Filter and Sort](docs/media/filter-sort.gif)
+```
+
 ## Features
 
 - Task CRUD with title, description, due date, priority, and tags.
